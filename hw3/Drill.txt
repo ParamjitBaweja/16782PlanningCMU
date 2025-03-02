@@ -1,0 +1,12 @@
+Symbols: Drill, Bone, Joint, Support
+Initial conditions: At(Drill, Support), Clear(Bone), Clear(Joint), Tool(Drill), Region(Bone), Region(Joint), Region(Support)
+Goal conditions: Drilled(Bone), At(Drill, Joint)
+
+Actions:
+        Move(tool, from, to)
+        Preconditions: At(tool, from), Clear(to), Tool(tool), Region(to)
+        Effects: At(tool, to), Clear(from), !At(tool, from)
+
+        Drill(tool, region)
+        Preconditions: At(tool, region), Tool(tool), Region(region), Clear(region)
+        Effects: Drilled(region), !Clear(region)
