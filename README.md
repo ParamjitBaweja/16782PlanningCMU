@@ -1,0 +1,1 @@
+If you're currently taking this course, please attempt to solve the assignments on your own and follow CMU's Academic Integrity Policy. https://www.cmu.edu/policies/student-and-student-life/academic-integrity.html
